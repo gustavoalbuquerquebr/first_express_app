@@ -1,0 +1,22 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: peachpuff;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.addForm {
+  padding: 1.5rem;
+}
+
+.addForm form {
+  text-align: right;
+}

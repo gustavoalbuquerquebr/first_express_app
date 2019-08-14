@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<h1>Homepage</h1>
+
+<section class="addForm">
+  <form action="/add" method="POST">
+    <input type="text" name="newAnimal">
+    <input type="submit" value="Add">
+  </form>
+</section>
+
+<% for (let i = 0; i < animals.length; i++) { %>
+<img src="https://source.unsplash.com/300x300/?<%=animals[i]%>" />
+<% } %>
+
+<% include partials/footer %>
