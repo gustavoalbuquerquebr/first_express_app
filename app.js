@@ -10,6 +10,8 @@ let animals = ["dog", "cat", "horse", "penguin", "bird"];
 
 // tell Express to search any static file (e.g. css) in the public folder
 app.use(express.static("public"));
+// sets the folder for template files, default is:
+app.set('views', './views');
 // set the default template engine, this way there's no need to type the file extension
 app.set("view engine", "ejs");
 
